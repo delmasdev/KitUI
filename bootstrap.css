@@ -676,6 +676,10 @@ pre code {
   max-width: 100%;
 }
 
+.colc {
+  min-width: 240px;
+}
+
 .row-cols-1 > * {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -5125,12 +5129,21 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.80rem;
 }
+
+a.customc, a.customc:hover {color: inherit;text-decoration: none;}
+
+.customc {min-width: 280px;}
+
+.custom-card {max-height: 370px;min-height: 280px;}
+.custom-card:hover {box-shadow: 0 0 11px rgba(33,33,33,.2);}
 
 .card-title {
   margin-bottom: 0.75rem;
+  overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;
 }
+.card-date {font-size: 13px; }
 
 .card-subtitle {
   margin-top: -0.375rem;
@@ -5200,7 +5213,6 @@ input[type="button"].btn-block {
 .card-img-bottom {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100%;
 }
 
 .card-img,
@@ -5208,6 +5220,18 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+
+.card-img-spe {
+width: 100%;
+  object-fit: cover; height: 130px;
+}
+
+.card-img-show {
+width: 100%;
+  object-fit: cover; height: 337px;
+  border-radius: 0.2rem;
+}
+
 
 .card-img,
 .card-img-bottom {
@@ -5640,6 +5664,16 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 2rem;
   background-color: #ecf0f1;
   border-radius: 0.3rem;
+}
+
+.banner {
+    background-image: url("./images/event.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-bg {
+background-color: rgba(0,0,0,0.7);
 }
 
 @media (min-width: 576px) {
